@@ -1,0 +1,79 @@
+.bac
+{
+    background-color: #000000;
+    width: 100vw;
+}
+.join-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.text-content {
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.box-content {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.chesss {
+  height: 70vh;
+  width: 45%;
+  margin-top: 20px;
+}
+.section {
+    /* color: black; */
+    margin-top: 100px;
+    margin-left: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    background-color: rgb(8, 7, 7); 
+    box-shadow: white ;
+    margin-bottom: 20px; 
+    /* border-radius: 25px; */
+    width: 300px;
+    height: 00px; /* Fixed height for square shape */
+  
+}
+.content{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.buton
+{
+    
+    width: 80%;
+    font-size: 20px;
+    margin-top: 0%;
+    background-color: #f8f6f6;
+    color: rgb(0, 0, 0);
+    border-color: black;
+    border-radius: 0%;
+    
+}
+.continuebutton
+{
+    width: 80%;
+    font-size: 20px;
+    margin-top: 50%;
+
+}
