@@ -1,0 +1,126 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    /* width: 100vw;  */
+  }
+  
+  .home-image10 {
+    width: 100vw;
+    height: 850px;
+    /* margin: auto;  */
+    /* display: block;  */
+  }
+  
+  .home-text {
+    font-family:fantasy;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom:35%;
+
+  }
+  .ch{
+/* display: flex; */
+  }
+  .wh{
+    text-align: center;
+  }
+  .le{
+     flex-direction: row;
+     display: flex;
+  }
+  .th{
+    display:flex ;
+    flex-direction: row;
+  }
+ 
+  .loc
+  {
+    width: 32cm;
+    height: 5cm;
+    /* background-color: aqua; */
+    border-radius: 30px;
+    margin-left: 4cm;
+    align-items: center;
+    text-align: center;
+display: flex;
+overflow-x: hidden;
+margin-top: .6cm;
+  }
+  .block{
+    width: 5cm;
+    height: 5cm;
+    /* background-color: aqua; */
+    border-radius: 30px;
+    margin-left: 2cm;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .but{
+    background-color:#924de6;
+  color : rgb(8, 8, 8);
+  border: 2.4px solid #050505; /* Green */
+  }
+  .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.animate
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1313 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size:30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

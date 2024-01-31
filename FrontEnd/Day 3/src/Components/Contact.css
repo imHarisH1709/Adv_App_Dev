@@ -1,0 +1,68 @@
+/* Contact.css */
+.contact-us-container {
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Adjust the margin as needed */
+    height: 100vh; /* Set the container height to 100% of the viewport height */
+}
+
+.contact-us-text {
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif; /* Set the font family */
+}
+
+.contact-us-text h1 {
+    font-size: 2em; /* Adjust the font size of the heading */
+    margin-left: 570px;
+    color: white;
+}
+
+.contact-form {
+    margin-left: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for the form */
+}
+
+.contact-form label {
+    font-size: 1.2em; /* Adjust the font size of the labels */
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.name-inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name-inputs input {
+    width: 48%; /* Adjust the width as needed */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #573b8a; */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f70000;
+}
