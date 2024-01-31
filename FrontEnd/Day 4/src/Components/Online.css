@@ -1,0 +1,52 @@
+/* Online.css */
+.glass-container {
+    /* background: rgba(255, 255, 255, 0.2); */
+    border-radius: 25px; /* Increased border-radius for a larger box */
+    padding: 40px; /* Increased padding for more space inside the box */
+    backdrop-filter: blur(15px); /* Increased blur for a more pronounced glass effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect on hover */
+}
+
+/* .glass-container:hover {
+    transform: scale(1.05); /* Increase size on hover */
+/* } */
+
+.schedule-text {
+    text-align: center;
+    color: #030000; /* Set the color of the text */
+    font-family: 'Arial', sans-serif; /* Set the font family */
+    margin-left: 40px;
+}
+
+.schedule-days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.day {
+    width: 250px; /* Increased width for each day */
+    height: 150px; /* Set the height to control the rectangle shape */
+    margin: 15px; /* Adjusted margin for more space between days */
+    padding: 15px; /* Adjusted padding for more space inside each day */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    /* background-color: #fffefb; */
+    backdrop-filter: blur(15px); /* Increased blur for a more pronounced glass effect */
+    transition: background 0.3s ease; /* Smooth transition effect on hover */
+}
+
+.day:hover {
+    background: rgba(0, 128, 255, 0.1); /* Change background on hover */
+}
+
+.day h3 {
+    color: #ab0606; /* Set the color of the day headings */
+    font-size: 1.2em; /* Adjust the font size of the day headings */
+}
+
+.day p {
+    color: #555; /* Set the color of the schedule details */
+    font-size: 1em; /* Adjust the font size of the schedule details */
+}
