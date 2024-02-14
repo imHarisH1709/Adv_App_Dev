@@ -1,0 +1,158 @@
+.body11 {
+	font-family: 'Arial', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:transparent;
+	padding-bottom: 43px;
+	/* padding-top: 5px; */
+  }
+
+  
+  .login-container11 {
+	display: flex;
+	box-shadow: 0 16px 16px 0 rgba(66, 23, 37, 0.37);
+	background-color: #012035;
+	/* background-color: rgb(255, 0, 0); */
+	width: 208vh;
+	/* margin-top: -2cm; */
+	height: 107vh;
+	overflow: hidden;
+	position: fixed;
+	margin-top: 2cm;
+	margin-left: 40.7cm;
+	/* border-radius: 40px;  */
+	/* Adjusted border radius */
+  }
+  
+  .img-containe {
+	
+	width: 100%;
+	height: 580px;
+	border-radius: 20px 30px 30px 20px;
+	/* background-color: aqua; */
+	/* background-image: url(Homee.jpg); */
+	background-size: 170%;
+	background-repeat: no-repeat;
+
+  }
+  
+  .img-container img {
+	width: 10%;
+	height: 580px;
+	border-radius: 5px;
+	margin-top: 2cm;
+	/* margin-left: 2cm; */
+	/* object-fit: cover; */
+  }
+  
+  .login-form-container11 {
+	flex: 1;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0px 4px 16px 4px rgba(66, 23, 37, 0.37);
+	/* background-color: #f9f9f9; */
+	background-color: white;
+	color:black;
+	width: 100%; /* Adjusted width */
+	max-width: 400px;
+	/* border-radius: 30px;  */
+	/* Adjusted border radius */
+	height: 614px;
+	/* border-top-right-radius: 30px; */
+	/* border-bottom-right-radius: 30px; */
+	margin-top: 1.7cm;
+	margin-left: -6.9cm;
+  }
+  
+  .form11 {
+	display: flex;
+	flex-direction: column;
+  }
+  .h311{
+	margin-top: 30px;
+	font-size: small;
+  }
+  
+  .input-group11 {
+	margin-bottom: 7px; /* Adjusted margin-bottom */
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px; /* Adjusted border radius */
+	background-color: rgb(212, 213, 231);
+  }
+  
+  input[type="lemail"],
+  input[type="lpassword"] {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px; /* Adjusted border radius */
+  }
+  
+  button[type=submit] {
+	background-color: #000000;
+	color: white;
+	cursor: pointer;
+	padding: 12px; /* Adjusted padding */
+	border-radius: 5px;
+	margin-bottom: 10px;
+  }
+  
+  button[type=submit]:hover {
+	background-color: #7e4d8d;
+  }
+  
+  .additional-links {
+	color: #0a0909;
+	font-size: 14px;
+	padding-top: 30px;
+  }
+  
+  .error-message {
+	color: red;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 10px;
+  }
+  
+  .social-icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+  }
+  
+  .social-icons a {
+	border: 1px solid #462e89;
+	border-radius: 5px; /* Adjusted border radius */
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	width: 40px;
+	height: 40px;
+  }
+  /* LoginPage.css */
+  
+  /* ... (existing styles) */
+  
+  .user-type-radio {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+  }
+  
+  .user-type-radio label {
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+  }
+  
+  .user-type-radio input {
+	margin-right: 5px;
+  }
+  
+  /* ... (existing styles) */
