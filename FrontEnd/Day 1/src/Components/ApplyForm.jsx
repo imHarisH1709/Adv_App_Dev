@@ -1,102 +1,106 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import {Form} from 'react-bootstrap'; 
-import './ApplyForm.css'
-import AdminNav from "./AdminNav";
+import '../Components/ApplyForm.css';
+import { useState } from 'react';
+// import Select from 'react-select';
+// import '../Compone/Confirm.jsx';
+// import { Link } from 'react-router-dom';
+// import Nav from './Nav';
+import AdminNav from './AdminNav';
+function ApplyForm() {
 
-const ApplyForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    gender: "",
-    state: "",
-    percentage10: "",
-    percentage12: "",
-  });
+    const [isActive, setIsActive] = useState(false);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleButtonClick = () => {
+    setIsActive((prev) => !prev);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add logic to handle form submission (e.g., sending data to a server)
-    console.log("Form submitted:", formData);
-    // You can redirect the user to a confirmation page or perform other actions here
-    alert("Your Application is successfully submitted");
-
-    // Clear the form data
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      gender: "",
-      state: "",
-      percentage10: "",
-      percentage12: "",
-    });
-  };
-
-  return (
-      <div className="main">
-        <AdminNav/>
-      <div className="form2">
-        <Form onSubmit={handleSubmit}>
-          <div className="data">
-            <h3 style={{ textAlign: "center" }}>Application Form</h3>
-          </div>
-          <label>
-            Student Name:
-            <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-          </label>
-          <label>
-          Student Email:
-            <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-          </label>
-          <label>
-          Student Phone:
-            <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
-          </label>
-          {/* <label>
-          Student Pan No:
-            <select name="gender" value={formData.gender} onChange={handleChange} required>
-              <option value="">Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </label> */}
-          <label>
-          Student Pan No:
-            <input type="text" name="state" value={formData.state} onChange={handleChange} required />
-          </label>
-          {/* <label>
-            10th Percentage:
-            <input
-              type="text"
-              name="percentage10"
-              value={formData.percentage10}
-              onChange={handleChange}
-              required
-            />
-          </label>
-          <label>
-            12th Percentage:
-            <input
-              type="text"
-              name="percentage12"
-              value={formData.percentage12}
-              onChange={handleChange}
-              required
-            />
-          </label> */}
-          <Link to="/Add"><button>Submit Application</button>
-          </Link></Form>
-      </div>
-    </div>
-  );
-};
-
-export default ApplyForm;
+    const options = [
+        { value: 'male', label: 'Male' },
+        { value: 'female', label: 'Female' },
+        // { value: 'orange', label: 'Orange' },
+        // { value: 'pear', label: 'Pear' },
+        // { value: 'grape', label: 'Grape' },
+      ];      
+  
+        const [selectedOptions, setSelectedOptions] = useState([]);
+      
+        const handleMultiSelectChange = (selectedOptions) => {
+          setSelectedOptions(selectedOptions);
+        };
+    
+    return (
+        <div>
+            <div style={{marginLeft:"-21cm"}}><AdminNav/></div>
+            <div className="modal-container">
+                <div className="modal-content">
+                <div className="evnt-create-box">
+                    <div className=''>
+                        {/* <a href="/BookEvents"><img className="eb-img" src="https://openclipart.org/image/2400px/svg_to_png/183568/close-button.png"></img></a> */}
+                        <h1 className='eb-h1'>Book your Slot:</h1><br></br>
+                        <div className='event-details'>
+                            <div className='event-items'>
+                            <label className='eb-label'>Enter Your Name:</label>
+                            <input className="eb-input" type="text" placeholder="Name "  />
+                            {/* <label className='eb-label'>      Enter Your Lastname:</label> */}
+                            {/* <input className="eb-input" type="text" placeholder="Lastname"  required/><br></br> */}
+                            {/* <label className='eb-label'>Enter Your Father's name:</label> */}
+                            {/* <input className="eb-input" type="text" placeholder="father's name"  required/> */}
+                            {/* <label className='eb-label'>Enter Your Mother's name:</label> */}
+                            {/* <input className="eb-input" type="text" placeholder="mother's name"  required/><br></br> */}
+                            <label className='eb-label'>Applicant Mobile No:</label>
+                            <input className="eb-input" type="tel" placeholder="Enter mobile number" required />
+                            <label className='eb-label'>Applicant Alternate Mobile No:</label>
+                            <input className="eb-input" type="tel" placeholder="Enter another mobile number" required /><br></br>
+                            <label className='eb-label'>Course Name:</label>
+                            <input className="eb-input" type="text" placeholder="Name"  required/>
+                            <label className='eb-label'>Age:</label>
+                            <input className="eb-input" type="number" placeholder="Enter the Age"  required/>
+                            </div>
+                            <div  className='event-items'>
+                            <label className='eb-label'>Applicant Address</label>
+                            <textarea className="eb-textarea" type="text" rows="4" cols="50" placeholder="Enter Applicant Address"  />
+                            {/* <label className='eb-label'>Event Date</label>
+                            <input className="eb-input" type="date" required/>
+                            <label className='eb-label'>Event Time</label>
+                            <input className="eb-input" type="time" required/>
+                            <label className='eb-label'>No. of People</label>
+                            <input className="eb-input" type="number" placeholder="Enter the Number of People"  /> */}
+                            </div>
+                            <div  className='event-items'>
+                            {/* <label className='eb-label1'>Count of People Consuming:</label>
+                            <label className='eb-label'>Veg</label>
+                            <input className="eb-input1" type="number" required/>
+                            <label className='eb-label2'>Non-Veg</label> */}
+                            {/* <input className="eb-input11" type="number" required/>
+                            <label className='eb-label'>Add-Ons</label> */}
+                            {/* <label className='eb-label'>Gender:</label>
+                            
+                            
+                            onChange={handleMultiSelectChange}
+                            value={selectedOptions} / */}
+                            {/* <div className='eb-box1'>
+                                <input className='eb-box2' type="checkbox"required/>
+                                <p className="eb-box3">Confirm the Entered Details!!!</p>
+                            </div> */}
+                            </div>
+                           <button className='create-button' >Enroll now</button>
+                           </div>
+                            {/* <div className={wrapper ${isActive ? 'active' : ''}}>
+                                <button className={custom-button ${isActive ? 'is_active' : ''}} onClick={handleButtonClick}> */}
+                                    {/* <span>Book Event</span> */}
+                                    <div className="success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.756 29.756" >
+                                        <path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z" />
+                                    </svg>
+                                    </div>
+                                {/* </button> */}
+                               
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+    )
+}
+export default ApplyForm

@@ -16,6 +16,10 @@ import AddStudent from './Components/AddStudent';
 import EventBox from './Components/EventBox';
 import Offers from './Components/Offers';
 import ApplyForm from './Components/ApplyForm';
+import First from "./Components/First"
+import Login1 from './Components/Login1';
+import AdminCourse from './Components/AdminCourse';
+import AdminRegistration from './Components/AdminRegistration';
 
 
 
@@ -24,10 +28,14 @@ const App = () => {
   return (
     <div>
       
+      {
       <Router>
         <Routes>
-         <Route path="/"element={<LoginForm/>}/>
+        <Route path="/"element={<First/>}/>
+         <Route path="/Login"element={<LoginForm/>}/>
+         <Route path="/Login1"element={<Login1/>}/>
          <Route path="/Register"element={<RegistrationForm/>}/>
+         <Route path="/AdminRegister"element={<AdminRegistration/>}/>
          <Route path="/Nav"element={<Nav/>}/>
          <Route path="/Home"element={<HomePage/>}/>
          <Route path="/Online"element={<OnlineClassSchedule/>}/>
@@ -43,10 +51,10 @@ const App = () => {
          <Route path="/Box"element={<EventBox/>}/>
          <Route path="/Offers"element={<Offers/>}/>
          <Route path="/Apply"element={<ApplyForm/>}/>
-
+         <Route path="/AdCourse"element={<AdminCourse/>}/>
 
           </Routes>
-      </Router>
+      </Router> }
     </div>
   )
 }

@@ -30,6 +30,7 @@ a {
   justify-content: space-around;
   height: 10vh;
   background: rgb(2, 2, 2);
+  /* background-color:aqua; */
   position: fixed;
   top: 0;
   width: 100%;

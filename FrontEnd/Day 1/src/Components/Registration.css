@@ -1,4 +1,4 @@
-.sbody {
+.sbody1 {
   width: 205vh;
   height: 100vh;
   font-family: 'Arial', sans-serif;
@@ -21,7 +21,8 @@
   /* padding: 10px; */
   margin-top: -1cm;
   display: flex;
-  
+  background-image: url(chessbackground.jpg);
+  background-size: cover;  
 }
 body::-webkit-scrollbar{
   display: none;
@@ -39,11 +40,10 @@ body::-webkit-scrollbar{
 }
 
 .img-container img  {
-  width: 50%;
-  height: 70%;
+  /* width: 200%; */
+  /* height: 70%; */
   margin-top: 1.7cm;
   border-radius: 5px;
-  object-fit: cover;
   margin-left:3cm;
   /* margin-top: 100px; */
 }
@@ -70,10 +70,11 @@ body::-webkit-scrollbar{
   max-width: 400px;
   margin-left: 1cm;
   /* border-radius: 30px; */
-  height: 60.1%;
+  height: 66.1%;
   position: absolute;
   margin-left: 63.2%;
-  margin-top: 2.cm;
+  margin-top: 5cm;
+  background-color: rgba(255, 255, 255, 0.534);
   /* display: flex; */
 }
 

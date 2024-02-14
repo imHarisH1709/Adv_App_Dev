@@ -6,11 +6,11 @@ import Nav from './Nav'; // Make sure to import your Navbar component
 function ContactUs() {
     return (
         <div>
-            <Nav />
+            <div style={{marginLeft:"-16.15cm"}}><Nav /></div>
             <div className="contact-us-container">
                 {/* <img src="path/to/your/image.jpg" alt="Contact Us" className="contact-us-image" /> */}
                 <div className="contact-us-text">
-                    <h1>Contact Us</h1><br></br>
+                    <h1 style={{marginLeft:"0cm"}}>Contact Us</h1><br></br>
                     {/* <p>
                         If you have any questions or need assistance, feel free to contact us.
                         Our team is ready to help you.
@@ -20,7 +20,7 @@ function ContactUs() {
                     
 
                     {/* Form Section */}
-                    <form className="contact-form">
+                    <form className="contact-form" style={{marginLeft:"-1cm",width:"200%"}}>
                         <label htmlFor="name">Name </label>
                         <div className="name-inputs">
                             <input type="text" id="firstName" name="firstName" placeholder="First" required />

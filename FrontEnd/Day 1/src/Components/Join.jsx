@@ -22,7 +22,7 @@ const Join = () => {
   // JSX structure for the Join component
   return (
     <div className='bac'>
-        <Nav/>
+        <div style={{marginLeft:"-0.5cm"}}> <Nav/></div>
       {/* <h1>{courseData.title}</h1> */}
       <div className='content'>
       <img src={logo} alt="Chess Fundamentals" className='chesss' /> {/* Add this line for the image */}

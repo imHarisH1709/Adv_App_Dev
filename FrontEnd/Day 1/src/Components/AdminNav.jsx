@@ -11,7 +11,7 @@ function AdminNav() {
   };
 
   return (
-    <nav className={`nav ${active ? "nav__active" : ""}`}>
+    <nav  className={`nav ${active ? "nav__active" : ""}`}>
       <div className="nav__brand">STAR CHESS ACADEMY</div>
       <div onClick={navToggle} className={`nav__toggler ${active ? "toggle" : ""}`}>
         <div className="line1"></div>
@@ -27,7 +27,12 @@ function AdminNav() {
         </li>
         <li className="nav__item">
           <a href="#" className="nav__link">
-            <Link to="/Apply">Course
+            <Link to="/Apply">AddCourse
+          </Link></a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            <Link to="/AdCourse">AllCourse
           </Link></a>
         </li>
         <li className="nav__item">

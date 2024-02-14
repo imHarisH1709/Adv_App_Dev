@@ -1,9 +1,10 @@
 // import React from 'react';
-import CourseCard from './CourseCard';
-import './Courses.css';
-import Nav from './Nav'; // Make sure to import your Navbar component
+import CourseCard from './AdminCourseCard';
+import './AdminCourse.css';
+import AdminNav from './AdminNav'; // Make sure to import your Navbar component
+// import AdminNav from './AdminNav';
 
-const Courses = () => {
+const AdminCourse = () => {
   // Assuming you have an array of courses data
   const coursesData = [
     { title: 'Chess Fundamentals', imageUrl: 'https://chesslang-academy-images.s3.amazonaws.com/1648818639078..jpg', description: 'BEGINNER', desc:'60 Activity' },
@@ -17,7 +18,7 @@ const Courses = () => {
 
   return (
     <div>
-    <div style={{marginLeft:"-1cm"}}><Nav /></div>
+   <div style={{marginLeft:"-2cm"}} ><AdminNav /></div>
     <div className="courses-container">
       {coursesData.map((course, index) => (
         <CourseCard key={index} {...course} />
@@ -27,4 +28,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default AdminCourse;

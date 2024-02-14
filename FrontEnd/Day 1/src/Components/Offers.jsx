@@ -17,10 +17,10 @@ const offers = [
 ];
 
 const Offers = () => {
-//   const handleViewClick = (offerId) => {
+  const handleViewClick = (offerId) => {
   
-//     console.log(View clicked for offer with ID: ${offerId});
-//   };
+    console.log("View clicked for offer with ID:${offerId}");
+  };
 
 //   const handleSubmitClick = (offerId) => {
    
@@ -29,7 +29,7 @@ const Offers = () => {
 
   return (
       <div className='hii'>
-          <Nav/>
+          <div style={{marginLeft:"-0.5cm"}}> <Nav/></div>
     <div className="offers-container">
       {offers.map(offer => (
         <div className="offer" key={offer.id}>

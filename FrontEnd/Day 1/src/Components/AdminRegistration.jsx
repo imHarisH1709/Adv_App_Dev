@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import './Registration.css';
 import logo from './../Components/Homee.jpg'
-import {  useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
 
-const RegistrationForm = () => {
+const AdminRegistration = () => {
   const [userType, setUserType] = useState('user'); // 'user' is the default user type
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -12,7 +11,7 @@ const RegistrationForm = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  // const nav=useNavigate();
+  const nav=useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -31,24 +30,14 @@ const RegistrationForm = () => {
       return;
     }
 
-    // console.log('User Type:', userType);
-    // console.log('Name:', name);
-    // console.log('Phone Number:', phoneNumber);
-    // console.log('Email:', email);
-    // console.log('Password:', password);
+    console.log('User Type:', userType);
+    console.log('Name:', name);
+    console.log('Phone Number:', phoneNumber);
+    console.log('Email:', email);
+    console.log('Password:', password);
 
-    // setErrorMessage('');
-    // nav("/Login");
-    const data = {
-      email:email,
-      name: name,
-      password:password,
-      confirmpassword:confirmPassword,
-      phonenumber:phoneNumber,
-    };
-    alert(data)
-    axios.post('http://localhost:8080/api/signup/post/sign', data);
-    alert("Added")
+    setErrorMessage('');
+    nav("/Login1");
   };
 
   return (
@@ -166,4 +155,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default AdminRegistration;
